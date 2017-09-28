@@ -1,8 +1,60 @@
-body {
-  background-color:#ce3635;
-  text-align: center;
-  color:#fff;
-  padding-top:10em;
+html,body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background: #f5f5f5;
+    color: #000
 }
 
-* { color:#fff; text-decoration: none;}
+body {
+    margin: 0;
+}
+
+h1,h2 {
+    font-weight: 200;
+}
+
+h1 { 
+    font-size: 3.5em; 
+}
+
+h2 {
+    color: #000;
+    font-size: 2em;
+}
+
+#mc_embed_signup {
+    background: #f5f5f5;
+    font: 14px Helvetica,Arial,sans-serif;
+    float: right;
+}
+
+.main-container {
+    position: absolute;
+    margin: 0 24em;
+}
+
+.subheading {
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
+.site-logo {
+    width: 300px;
+    float: left;
+}
+
+.angled1 {
+    background: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0% 0%, 0% 10%, 30% 1600px, 0% 1600px);
+}
+
+.angled2 {
+    background: #fe9915;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0% 0%, 1600px 0%, 20% 0%, 0% 50%);
+}
