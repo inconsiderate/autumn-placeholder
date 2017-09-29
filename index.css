@@ -17,11 +17,10 @@ h1, * {
 #mc_embed_signup {
     background: #f5f5f5;
     font: 14px Helvetica,Arial,sans-serif;
-    float: right;
 }
 
-.ui.centered.header {
-    margin-top: 1em;
+.computer.only {
+    margin-top: 7em;
 }
 
 .ui.center.aligned.segment.alert-banner {
