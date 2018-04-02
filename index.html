@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <meta property="og:title" content="Autumn Games - Kickstarter Games, Late Orders, and Exclusive Add-Ons">
-  <meta property="og:image" content="http://autumngames.ca/autumngameslogo.png">
+  <meta property="og:image" content="http://autumngames.ca/autumngameslogoCentered.png">
   <meta property="og:description" content="The best place to buy Kickstarter board games, card games, and miniatures games. At reasonable prices!">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -40,108 +40,7 @@
   <link rel="stylesheet" type="text/css" href="semantic/components/sidebar.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/transition.css">
   <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-  <style type="text/css">
-
-    .hidden.menu {
-      display: none;
-    }
-    .ui.vertical.masthead:before, .ui.vertical.footer:before {
-      content: '';
-      background-image: url(gametable.jpeg);
-      background-size: cover;
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      filter: blur(3px);
-      opacity: 0.2;
-      height: 100%;
-      width: 100%;
-    }
-    .masthead.segment {
-      min-height: 700px;
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
-
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-    .ui.vertical.stripe h3 {
-      font-size: 2em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-    .ui.vertical.stripe p {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 5em;
-      padding-bottom: 5em;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
-    }
-
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
-
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="index.css">
 
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -149,31 +48,8 @@
   crossorigin="anonymous"></script>
 <script src="semantic/semantic.min.js"></script>
 
-  <script>
-  $(document)
-    .ready(function() {
+<script src="index.js"></script>
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
 </head>
 <body>
 
@@ -181,16 +57,14 @@
 <div class="ui large top fixed hidden orange menu">
   <div class="ui container">
     <a class="active item" href="#signup">Home</a>
-    <a class="item" href="http://shop.autumngames.ca">Shop (coming soon!)</a>
-    <!-- <a class="item" href="/about">About Us</a> -->
+    <a class="item" href="http://shop.autumngames.ca">Shop Now</a>
   </div>
 </div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar orange menu">
   <a class="active item" href="#signup">Home</a>
-    <a class="item" href="http://shop.autumngames.ca">Shop (coming soon!)</a>
-    <!-- <a class="item" href="/about">About Us</a> -->
+    <a class="item" href="http://shop.autumngames.ca">Shop Now</a>
 </div>
 
 
@@ -203,21 +77,20 @@
           <i class="sidebar icon"></i>
         </a>
         <a class="active item" href="#signup">Home</a>
-        <a class="item" href="http://shop.autumngames.ca">Shop (coming soon!)</a>
-        <!-- <a class="item" href="/about">About Us</a> -->
+        <a class="item" href="http://shop.autumngames.ca">Shop Now</a>
       </div>
     </div>
 
     <div class="ui text container">
-      <!-- <h1 class="ui header">Autumn Games</h1> -->
-      <img src="autumngameslogo.png" class="ui large centered image" alt="Autumn Games" title="Autumn Games">
-      <h1 id="signup">Online Store <b>Spring 2018</b> - Retail Location TBA</h1>
-          <p>Your prime destination for Kickstarter games, hard to find exclusives, and late Kickstarter tag-ons.</p>
+      <img src="autumngameslogoCentered.png" class="ui large centered image" alt="Autumn Games" title="Autumn Games">
+      <h2 id="signup">Vancouver Retail Location Coming Soon!</h2>
+      <a href="http://shop.autumngames.ca" class="shop-now-button ui massive fluid orange button">SHOP ONLINE NOW</a>
+      <!--<p>Your prime destination for Kickstarter games, hard to find exclusives, and late Kickstarter tag-ons.</p>-->
 
       <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
               <br/>
-              <h2 class="ui centered header">Sign up now and get 10% off your first purchase!</h2>
+              <h2 class="ui centered header">Sign up to get the latest news and promotions!</h2>
               <form action="//autumngames.us16.list-manage.com/subscribe/post?u=2b76bf5b0b8ef6e61168589c1&amp;id=d6287b5cc0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">
                   <h2></h2>
@@ -225,11 +98,11 @@
                   <label for="mce-EMAIL">Email Address </label>
                   <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
               </div>
-              <div class="mc-field-group">
+              <div class="mc-field-group name-group">
                   <label for="mce-FNAME">First Name </label>
                   <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
               </div>
-              <div class="mc-field-group">
+              <div class="mc-field-group name-group">
                   <label for="mce-LNAME">Last Name </label>
                   <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
               </div>
@@ -259,7 +132,7 @@
           <p>The best part? A huge chunk of our profits goes right back into buying even more awesome games, and supporting new creators.</p>
         </div>
         <div class="four wide right floated column">
-          <img src="autumngameslogo.png" class="ui large image">
+          <img src="autumngameslogoCentered.png" class="ui large image">
         </div>
 
           <div class="ui vertical stripe segment sixteen wide column">      
@@ -273,40 +146,40 @@
       </div>
       
         <div class="four wide column">
-          <img src="games/7thcontinent.jpg" class="ui large rounded image" alt="Buy 7th Continent Board Game" title="7th Continent Board Game">
+          <img src="games/7thcontinent.jpg" class="ui large rounded image game-image" alt="Buy 7th Continent Board Game" title="7th Continent Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/gloomhaven.jpg" class="ui large rounded image" alt="Buy Gloomhaven Board Game" title="Gloomhaven Board Game">
+          <img src="games/gloomhaven.jpg" class="ui large rounded image game-image" alt="Buy Gloomhaven Board Game" title="Gloomhaven Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/kingdomdeathmonster.jpg" class="ui large rounded image" alt="Buy Kingdom Death Monster Board Game" title="Kingdom Death Monster Board Game">
+          <img src="games/kingdomdeathmonster.jpg" class="ui large rounded image game-image" alt="Buy Kingdom Death Monster Board Game" title="Kingdom Death Monster Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/islandofeldorado.jpg" class="ui large rounded image" alt="Buy Island of El Dorado Board Game" title="Island of El Dorado Board Game">
+          <img src="games/islandofeldorado.jpg" class="ui large rounded image game-image" alt="Buy Island of El Dorado Board Game" title="Island of El Dorado Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/highlander.jpg" class="ui large rounded image" alt="Buy Highlander Board Game" title="Highlander Board Game">
+          <img src="games/highlander.jpg" class="ui large rounded image game-image" alt="Buy Highlander Board Game" title="Highlander Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/warroom.jpg" class="ui large rounded image" alt="Buy War Room Board Game" title="War Room Board Game">
+          <img src="games/warroom.jpg" class="ui large rounded image game-image" alt="Buy War Room Board Game" title="War Room Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/gloomofkilforth.jpg" class="ui large rounded image" alt="Buy Gloom of Kilforth Board Game" title="Gloom of Kilforth Board Game">
+          <img src="games/gloomofkilforth.jpg" class="ui large rounded image game-image" alt="Buy Gloom of Kilforth Board Game" title="Gloom of Kilforth Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/ravine.jpg" class="ui large rounded image" alt="Buy Ravine Board Game" title="Ravine Board Game">
+          <img src="games/ravine.jpg" class="ui large rounded image game-image" alt="Buy Ravine Board Game" title="Ravine Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/consentacle.png" class="ui large rounded image" alt="Buy Consentacle Board Game" title="Consentacle Board Game">
+          <img src="games/consentacle.png" class="ui large rounded image game-image" alt="Buy Consentacle Board Game" title="Consentacle Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/firelight.jpg" class="ui large rounded image" alt="Buy Firelight Board Game" title="Firelight Board Game">
+          <img src="games/firelight.jpg" class="ui large rounded image game-image" alt="Buy Firelight Board Game" title="Firelight Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/overworld.png" class="ui large rounded image" alt="Buy Overworld Board Game" title="Overworld Board Game">
+          <img src="games/overworld.png" class="ui large rounded image game-image" alt="Buy Overworld Board Game" title="Overworld Board Game">
         </div>
         <div class="four wide column">
-          <img src="games/massivedarkness.jpg" class="ui large rounded image" alt="Buy Massive Darkness Board Game" title="Massive Darkness Board Game">
+          <img src="games/massivedarkness.jpg" class="ui large rounded image game-image" alt="Buy Massive Darkness Board Game" title="Massive Darkness Board Game">
         </div>
     </div>
   </div>
